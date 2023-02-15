@@ -7,5 +7,6 @@
 
 Console.Write("введите число дня недели от 1 до 7: ");
 int day = int.Parse(Console.ReadLine()!);
-if(day>=6) Console.Write("да");
+if(day<0 ||day > 7) Console.Write("это не день недели");
+else if(day>=6) Console.Write("да");
 else Console.Write("нет");
